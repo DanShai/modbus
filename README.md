@@ -1,0 +1,3 @@
+**TUF-2000M** is an ultrasonic energy meter that has a [Modbus](https://en.wikipedia.org/wiki/Modbus) interface
+this app reads live or text feed that shows the time of the reading followed by some registers values, these value are in decimal format that have to be decoded to REAL4/Float, LONG, INTEGER, BIT, or BCD. then charted/graphed.
+Note that **TUF-2000M** has over 1500 registers! for example the date and time are held in 3 registers : register *53* to register *55*, **BCD** *binary coded dicimal*: 6 Bytes of BCD stands *SMHDMY*, lower byte first.
