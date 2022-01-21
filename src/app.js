@@ -2,6 +2,7 @@ import { Pane, Spinner } from "evergreen-ui";
 import React from "react";
 import useFetch from "react-fetch-hook";
 import { Dchart } from "./components/charts/DataChart";
+
 const App = () => {
   const { data, isLoading } = useFetch(
     "https://danshai.github.io/dan/tfu.txt",
@@ -9,7 +10,8 @@ const App = () => {
       formatter: response => response.text()
     }
   );
-  return isLoading ? (
+ 
+ return isLoading ? (
     <Pane>
       <Spinner marginX="auto" marginY={120} />
     </Pane>
